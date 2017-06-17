@@ -1,0 +1,97 @@
+/* Universal Styles */
+
+html {
+  font-family: 'Roboto Slab', serif;
+  color: #2E3192;
+}
+
+h1, h2, h3, span {
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Header Section */
+
+header {
+  width: 100%;
+  color: white;
+  background-image: url("../images/header_background_1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 18em;
+  overflow: hidden;
+}
+
+div.bar {
+  /* background-color: rgba(56, 180, 249, .5); */
+  border: solid 3px white;
+  border-radius: 25px;
+  width: 90%;
+  margin: 2.5rem auto;
+  text-align: center;
+}
+
+img.logo {
+  max-width: 35%;
+  padding: .75em .75em .75em 5%;
+  opacity: 1.0;
+}
+
+/* Introduction/Services Section */
+
+div.introduction {
+  background-image: url("../images/intro_background.png");
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  margin: 2rem auto;
+  height: 1000px;
+}
+
+.slogan {
+  padding: 5rem 2rem 1rem 10%;
+}
+
+.introduction h2 {
+  padding: 2rem 2rem 1rem 10%;
+}
+
+.services {
+  padding: 2rem 2rem 1rem 12%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.services li {
+  padding: .5rem 0;
+}
+
+/* Gallery */
+
+
+/* Contact Section */
+
+div.contact {
+  height: 15rem;
+  width: 100%;
+  background-color: #29ABE2;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+div.center {
+  width: 100%;
+}
+
+.contact h1 {
+  padding: 1rem 1rem 1rem 10%;
+}
