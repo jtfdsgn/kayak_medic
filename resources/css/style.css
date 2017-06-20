@@ -39,11 +39,9 @@ header {
   position: fixed;
   top: 0;
   z-index: 5;
-  padding: 1.5rem;
+  padding-left: 6rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 img.logo {
@@ -54,10 +52,12 @@ img.logo {
 nav {
   padding: 1rem;
   text-align: center;
+  flex-grow: 1;
 }
 
 nav span {
   padding: 0 1.5rem;
+  font-size: 1.25rem;
 }
 
 /* All Content */
