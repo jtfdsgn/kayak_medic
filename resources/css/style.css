@@ -18,6 +18,15 @@ h2 {
   font-size: 1.5rem;
 }
 
+.background {
+  width: 100%;
+  padding: 4rem 6rem;
+}
+
+.contents {
+  max-width: 1024px;
+}
+
 /* Header Section */
 
 header {
@@ -26,32 +35,41 @@ header {
   background-image: url("../images/header_background_1.jpg");
   background-size: cover;
   background-position: center;
-  height: 18em;
-  overflow: hidden;
-}
-
-div.bar {
-  /* background-color: rgba(56, 180, 249, .5); */
-  border: solid 3px white;
-  border-radius: 25px;
-  width: 90%;
-  margin: 2.5rem auto;
-  text-align: center;
+  height: 12rem;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 img.logo {
-  max-width: 35%;
-  padding: .75em .75em .75em 5%;
-  opacity: 1.0;
+  display: block;
+  height: 8rem;
+}
+
+nav {
+  padding: 1rem;
+  text-align: center;
+}
+
+nav span {
+  padding: 0 1.5rem;
+}
+
+/* All Content */
+
+div.content {
+  position: relative;
+  top: 12rem;
 }
 
 /* Introduction/Services Section */
 
 div.introduction {
-  background-image: url("../images/intro_background.png");
-  background-position: center;
-  background-size: 60%;
-  background-repeat: no-repeat;
   margin: 2rem auto;
   height: 1000px;
 }
@@ -79,19 +97,12 @@ div.introduction {
 
 /* Contact Section */
 
-div.contact {
-  height: 15rem;
-  width: 100%;
+div#contact {
+  height: 8rem;
   background-color: #29ABE2;
   color: white;
-  display: flex;
-  align-items: center;
 }
 
-div.center {
-  width: 100%;
-}
-
-.contact h1 {
-  padding: 1rem 1rem 1rem 10%;
+.contents h1 {
+  padding-top: .75rem;
 }
