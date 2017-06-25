@@ -198,6 +198,10 @@ footer span {
     padding: 4rem 2rem;
   }
 
+  #contact h1 {
+    font-size: 2rem;
+  }
+
   div.contact {
     height: 16rem;
     margin-top: 2.5rem;
