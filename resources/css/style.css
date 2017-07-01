@@ -6,7 +6,7 @@ html {
 }
 
 .container {
-  max-width: 960px;
+  padding: 2rem 8rem;
   margin: auto;
 }
 
@@ -26,38 +26,46 @@ h2 {
 /* Header Section */
 
 header {
-  width: 100%;
-  height: 32rem;
-  background-image: url("../images/header_background.jpg");
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 5rem;
+  background-color: #38b4f9;
+  padding: 1.25rem 9rem 1.25rem 8rem;
 }
 
 #header {
-  width: 23rem;
-  height: 5rem;
-  padding: 1.875rem 2.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  background-color: #38b4f9;
 }
 
 #header img {
-  height: 10rem;
+  height: 7rem;
+  padding-right: 1rem;
 }
 
 ul.nav {
   line-height: 2;
   text-align: right;
   font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .nav a {
   text-decoration: none;
   color: white;
+}
+
+.nav a:hover {
+  color: #1a2f6b;
+}
+
+/* Image Div */
+
+#header_image {
+  background-image: url("../images/header_background.jpg");
+  background-size: cover;
+  height: 26rem;
+  background-position: center;
+  margin-bottom: 2rem;
 }
 
 /* About Section */
@@ -71,7 +79,7 @@ ul.nav {
 }
 
 #about h2 {
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
 /* Services Sections */
@@ -90,13 +98,12 @@ ul.nav {
 
 div.contact {
   background-color: #38b4f9;
-  height: 20rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 #contact {
   color: white;
-  padding: 4rem;
+  padding: 1rem 0;
 }
 
 #contact h1 {
@@ -104,28 +111,46 @@ div.contact {
   font-size: 3rem;
 }
 
+#contact a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#contact a:hover {
+  color: #1a2f6b;
+}
+
 /* Footer Section */
 
 footer {
   height: 1rem;
   padding: 2rem 0;
+  line-height: 1.5;
 }
 
 footer a {
-  color: #6EC5B4;
   text-decoration: none;
 }
 
-footer span {
+footer a:hover {
+  color: #6EC5B4;
+}
+
+footer span, footer a {
   color: #4D4D4D;
 }
 
 /* Media Queries */
 
-@media only screen and (min-width: 751px) and (max-width: 1024px) {
+@media only screen and (min-width: 751px) and (max-width: 1027px) {
 
   .container {
-    padding: 0 4rem;
+    padding: 2rem 5rem;
+  }
+
+  header {
+    background-color: #38b4f9;
+    padding: 1.25rem 6rem 1.25rem 5rem;
   }
 
   h1 {
@@ -133,19 +158,16 @@ footer span {
   }
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  .service h1 {
+    font-size: 2.5rem;
   }
 
   #contact h1 {
+    line-height: 1.5;
     font-size: 2rem;
-  }
-
-  div.contact {
-    height: 16rem;
-  }
-
-  .service img {
-    height: 12rem;
   }
 
 }
@@ -153,212 +175,118 @@ footer span {
 @media only screen and (min-width: 521px) and (max-width: 750px) {
 
   .container {
-    padding: 0 2.5rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1rem;
+    padding: 2rem 3rem;
   }
 
   header {
-    margin-bottom: 2.5rem;
+    background-color: #38b4f9;
+    padding: 1.25rem 4rem 1.25rem 3rem;
   }
 
-  header div.container {
-    padding: 0;
+  h1 {
+    font-size: 2.5rem;
   }
 
-  #header {
-    width: 100%;
-    justify-content: flex-start;
-    color: white;
+  h2 {
+    font-size: 1.25rem;
   }
 
-  #header nav {
-    padding-left: 5rem;
-  }
-
-  #about h1 {
-    padding-bottom: 1rem;
-  }
-
-  #about h2 {
-    padding: 1rem 0;
+  .service {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 4rem;
   }
 
   .service img {
-    height: 8rem;
+    height: 12rem;
+    padding-right: 0;
+    margin: auto;
   }
 
-  #contact {
-    padding: 4rem 2rem;
+  .service h1 {
+    font-size: 2.5rem;
   }
 
   #contact h1 {
+    line-height: 1.5;
     font-size: 2rem;
   }
 
-  div.contact {
-    height: 16rem;
-    margin-top: 2.5rem;
-  }
-
-  footer {
-    font-size: .75rem;
-  }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 520px) {
+@media only screen and (min-width: 250px) and (max-width: 520px) {
+
+  html {
+    text-align: center;
+  }
 
   .container {
-    padding: 0 1.75rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: .75rem;
+    padding: 1rem;
   }
 
   header {
-    margin-bottom: 2rem;
-    height: 26rem;
+    background-color: #38b4f9;
+    padding: 1.25rem 1.25rem 1.25rem .75rem;
   }
 
-  header div.container {
-    padding: 0;
+  h1 {
+    font-size: 2.5rem;
   }
 
-  #header {
-    width: 100%;
-    padding: 1.75rem;
-    justify-content: flex-start;
-    color: white;
+  h2 {
+    font-size: 1.25rem;
   }
 
   #header img {
-    height: 9rem;
+    height: 5rem;
+    padding-right: 1rem;
+  }
+
+  #header_image {
+    height: 20rem;
   }
 
   ul.nav {
-    line-height: 1.75;
+    line-height: 1.7;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1rem;
   }
 
-  #header nav {
-    padding-left: 4rem;
-  }
-
-  #about h1 {
-    padding-bottom: .75rem;
-  }
-
-  #about h2 {
-    padding: .75rem 0;
+  .service {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 4rem;
   }
 
   .service img {
-    height: 5rem;
+    height: 12rem;
+    padding-right: 0;
+    margin: auto;
   }
 
-  #contact {
-    padding: 2rem;
-  }
-
-  #contact h1 {
-    font-size: 1.5rem;
+  .service h1 {
+    font-size: 2.5rem;
   }
 
   div.contact {
-    height: 8rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  #contact h1 {
+    line-height: 1.5;
+    font-size: 1.25rem;
+  }
+
+  #contact {
+    color: white;
+    padding: .5rem 0;
   }
 
   footer {
-    font-size: .5rem;
-    height: .75rem;
-    padding: 1rem 0;
+    font-size: .75rem;
   }
+
 }
-
-/* @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-      .container {
-        padding: 0 1.75rem;
-      }
-
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      h2 {
-        font-size: .75rem;
-      }
-
-      header {
-        margin-bottom: 2rem;
-        height: 26rem;
-      }
-
-      header div.container {
-        padding: 0;
-      }
-
-      #header {
-        width: 100%;
-        padding: 1.75rem;
-        justify-content: flex-start;
-        color: white;
-      }
-
-      #header img {
-        height: 9rem;
-      }
-
-      ul.nav {
-        line-height: 1.75;
-      }
-
-      #header nav {
-        padding-left: 4rem;
-      }
-
-      #about h1 {
-        padding-bottom: .75rem;
-      }
-
-      #about h2 {
-        padding: .75rem 0;
-      }
-
-      .service img {
-        height: 5rem;
-      }
-
-      #contact {
-        padding: 2rem;
-      }
-
-      #contact h1 {
-        font-size: 1.5rem;
-      }
-
-      div.contact {
-        height: 8rem;
-        margin-top: 2.5rem;
-      }
-
-      footer {
-        font-size: .5rem;
-        height: .75rem;
-        padding: 1rem 0;
-      }
-} */
