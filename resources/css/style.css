@@ -266,12 +266,17 @@ footer span, footer a {
     font-size: 1rem;
   }
 
+  /* About */
+
+  #about {
+    padding-right: 0;
+  }
+
   /* Service */
 
   .service {
     display: block;
     text-align: center;
-    margin: auto;
     padding-bottom: 4rem;
   }
 
